@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+    <link href="assets/css/classic-light.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand navbar-brand-emphasized" href="">GetYourPanel</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="neworder.html">New order</a></li>
+            <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mass order <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+								<li><a href="mass-simple.html">Simple form</a></li>
+                <li><a href="mass-regular.html">Regular form</a></li>
+                <li><a href="mass-extended.html">Extended form</a></li>
+              </ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Auto likes <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+								<li><a href="newsubscription.html">New subscription</a></li>
+                <li><a href="mysubscriptions.html">My subscriptions</a></li>
+              </ul>
+						</li>
+						<li><a href="services.html">Service list</a></li>
+            <li><a href="ordershistory.html">Orders history</a></li>
+            <li><a href="addfunds.html">Add funds</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="api.html">API</a></li>
+            <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tickets <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+								<li><a href="newticket.html">New ticket</a></li>
+                <li><a href="mytickets.html">My tickets</a></li>
+              </ul>
+						</li>
+						<li><a href="terms.html">Terms</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a>$0.00</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon icon-user"></i> demo <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="center-big-content-block">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <form>
+                <div class="form-group">
+                  <label class="control-label" for="current_password">Current password</label>
+                  <input type="password" class="form-control" id="current_password" value="demo" />
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="new_password">New password</label>
+                  <input type="password" class="form-control" id="new_password" />
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="confirm_password">Confirm new password</label>
+                  <input type="password" class="form-control" id="confirm_password" />
+                </div>
+                <button type="submit" class="btn btn-default m-b">Change password</button>
+              </form>
+							<form>
+								<div class="form-group panel-border-top">
+									<label class="control-label" for="timezone">Timezone</label>
+									<select name="timezone" id="timezone" class="custom-select w-full">
+										<option value="-43200">(UTC -12:00) Baker/Howland Island</option>
+										<option value="-39600">(UTC -11:00) Niue</option>
+										<option value="-36000">(UTC -10:00) Hawaii-Aleutian Standard Time, Cook Islands, Tahiti</option>
+										<option value="-34200">(UTC -9:30) Marquesas Islands</option>
+										<option value="-32400">(UTC -9:00) Alaska Standard Time, Gambier Islands</option>
+										<option value="-28800">(UTC -8:00) Pacific Standard Time, Clipperton Island</option>
+										<option value="-25200">(UTC -7:00) Mountain Standard Time</option>
+										<option value="-21600">(UTC -6:00) Central Standard Time</option>
+										<option value="-18000">(UTC -5:00) Eastern Standard Time, Western Caribbean Standard Time</option>
+										<option value="-16200">(UTC -4:30) Venezuelan Standard Time</option>
+										<option value="-14400">(UTC -4:00) Atlantic Standard Time, Eastern Caribbean Standard Time</option>
+										<option value="-12600">(UTC -3:30) Newfoundland Standard Time</option>
+										<option value="-10800">(UTC -3:00) Argentina, Brazil, French Guiana, Uruguay</option>
+										<option value="-7200">(UTC -2:00) South Georgia/South Sandwich Islands</option>
+										<option value="-3600">(UTC -1:00) Azores, Cape Verde Islands</option>
+										<option value="0" selected>(UTC) Greenwich Mean Time, Western European Time</option>
+										<option value="3600">(UTC +1:00) Central European Time, West Africa Time</option>
+										<option value="7200">(UTC +2:00) Central Africa Time, Eastern European Time, Kaliningrad Time</option>
+										<option value="10800">(UTC +3:00) Moscow Time, East Africa Time, Arabia Standard Time</option>
+										<option value="12600">(UTC +3:30) Iran Standard Time</option>
+										<option value="14400">(UTC +4:00) Azerbaijan Standard Time, Samara Time</option>
+										<option value="16200">(UTC +4:30) Afghanistan</option>
+										<option value="18000">(UTC +5:00) Pakistan Standard Time, Yekaterinburg Time</option>
+										<option value="19800">(UTC +5:30) Indian Standard Time, Sri Lanka Time</option>
+										<option value="20700">(UTC +5:45) Nepal Time</option>
+										<option value="21600">(UTC +6:00) Bangladesh Standard Time, Bhutan Time, Omsk Time</option>
+										<option value="23400">(UTC +6:30) Cocos Islands, Myanmar</option>
+										<option value="25200">(UTC +7:00) Krasnoyarsk Time, Cambodia, Laos, Thailand, Vietnam</option>
+										<option value="28800">(UTC +8:00) Australian Western Standard Time, Beijing Time, Irkutsk Time</option>
+										<option value="31500">(UTC +8:45) Australian Central Western Standard Time</option>
+										<option value="32400">(UTC +9:00) Japan Standard Time, Korea Standard Time, Yakutsk Time</option>
+										<option value="34200">(UTC +9:30) Australian Central Standard Time</option>
+										<option value="36000">(UTC +10:00) Australian Eastern Standard Time, Vladivostok Time</option>
+										<option value="37800">(UTC +10:30) Lord Howe Island</option>
+										<option value="39600">(UTC +11:00) Srednekolymsk Time, Solomon Islands, Vanuatu</option>
+										<option value="41400">(UTC +11:30) Norfolk Island</option>
+										<option value="43200">(UTC +12:00) Fiji, Gilbert Islands, Kamchatka Time, New Zealand Standard Time</option>
+										<option value="45900">(UTC +12:45) Chatham Islands Standard Time</option>
+										<option value="46800">(UTC +13:00) Samoa Time Zone, Phoenix Islands Time, Tonga</option>
+										<option value="50400">(UTC +14:00) Line Islands</option>
+									</select>
+								</div>
+								<button type="submit" class="btn btn-default m-b">Save</button>
+							</form>
+              <div class="form-group panel-border-top">
+								<label class="control-label" for="api_key">API key</label>
+								<input type="text" class="form-control" id="api_key" value="2c1fa7cc36c528c488c90a8beb11f1e7" readonly />
+							</div>
+							<a href="" class="btn btn-default">Generate new</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/tablesorter.min.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+  </body>
+</html>
