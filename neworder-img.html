@@ -20,11 +20,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand navbar-brand-emphasized" href="">GetYourPanel</a>
+          <a class="navbar-brand navbar-brand-emphasized" href=""><img src="assets/img/ritarsoft.png" alt=""></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="neworder.html">New order</a></li>
+            <li class="active"><a href="neworder.html">New order</a></li>
             <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mass order <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -33,7 +33,7 @@
                 <li><a href="mass-extended.html">Extended form</a></li>
               </ul>
 						</li>
-						<li class="active dropdown">
+						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Auto likes <span class="caret"></span></a>
               <ul class="dropdown-menu">
 								<li><a href="newsubscription.html">New subscription</a></li>
@@ -75,36 +75,69 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <form method="post" action="">
-                <div class="form-group">
-                  <label class="control-label" for="type">Service</label>
+								<div class="form-group">
+                  <label class="control-label" for="type">Category</label>
                   <select id="type" class="custom-select w-full">
-                    <option value="" >Instagram Likes — $2</option>
-                    <option value="" >Instagram Views — $1.50</option>
-                    <option value="" >Instagram Comments — $50</option>
+                    <option value="" >Instagram</option>
+                    <option value="" >Facebook</option>
+                    <option value="" >Twitter</option>
+                    <option value="" >YouTube</option>
+                    <option value="" >Google Plus</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <label class="control-label" for="username">Username</label>
-                  <input type="text" class="form-control" id="username" />
+                  <label class="control-label" for="type">Service</label>
+                  <select id="type" class="custom-select w-full">
+                    <option value="16" >Instagram followers (SERVER 1, INSTANT, max 3k, send username only) — $1.30</option>
+                    <option value="13" >Instagram followers (SERVER 2, INSTANT, max 5500) — $1.30</option>
+                    <option value="51" >Instagram followers (SERVER 3, REFILL, unlimited, 1-5k/day) — $1.30</option>
+                    <option value="36" >Instagram followers (SERVER 4, max 3k, FAST) — $1.30</option>
+                    <option value="87" >Instagram followers (SERVER 5, max 14k, FAST) — $1.80</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="link">Link</label>
+                  <input type="text" class="form-control" id="link" />
                 </div>
                 <div class="form-group">
                   <label class="control-label" for="quantity">Quantity</label>
                   <input type="text" class="form-control" id="quantity" />
                 </div>
                 <div class="form-group">
-                  <label class="control-label" for="posts">Total posts</label>
-                  <input type="text" class="form-control" id="posts" />
+                  <label class="control-label terms">
+                    <input type="checkbox" id="terms">I have read and agreed with
+                    <a href="#" data-toggle="modal" data-target=".modal">Terms of Service</a>
+                  </label>
                 </div>
-                <button type="submit" class="btn btn-default">Submit subscription</button>
+                <button type="submit" class="btn btn-default">Submit order</button>
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="footer text-center">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+        </ul>
+        <button class="btn btn-default">Order</button>
+        <button class="btn btn-default">Some botton</button>
+        <img src="assets/img/wmlogo_vector_blue.png" alt="">
+        <img src="assets/img/paypal-784404_960_720.png" alt="">
+        <span>Copiright @</span>
+      </div>
+    </div>
     <div class="modal">
       <div class="modal-dialog modal-md">
         <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Terms</h4>
+          </div>
           <div class="modal-body modal-body-scroller">
             The use of services provided by <b>Bulkfollows </b>establishes agreement to these terms. By registering or using our services you <b>agree </b>that you have read and fully understood the following terms of Service and <b>Bulkfollows </b>will not be help liable for loss in any way for users who have not read the below terms of service.
             <br>
