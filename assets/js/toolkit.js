@@ -742,7 +742,7 @@
     var dimension = this.dimension()
 
     this.$element
-      .removeClass('collapse')
+      .removeClass('collapse out-block')
       .addClass('collapsing')[dimension](0)
       .attr('aria-expanded', true)
 
@@ -755,7 +755,7 @@
     var complete = function () {
       this.$element
         .removeClass('collapsing')
-        .addClass('collapse in')[dimension]('')
+        .addClass('out-block collapse in')[dimension]('')
       this.transitioning = 0
       this.$element
         .trigger('shown.bs.collapse')
@@ -783,7 +783,7 @@
 
     this.$element
       .addClass('collapsing')
-      .removeClass('collapse in')
+      .removeClass('out-block collapse in')
       .attr('aria-expanded', false)
 
     this.$trigger
@@ -796,7 +796,7 @@
       this.transitioning = 0
       this.$element
         .removeClass('collapsing')
-        .addClass('collapse')
+        .addClass('out-block collapse')
         .trigger('hidden.bs.collapse')
     }
 
