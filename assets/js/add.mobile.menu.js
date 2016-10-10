@@ -8,7 +8,7 @@ $(window).on('load resize', function (){
 
 	var creticalPoint = windowWith - (getMenuWith + getLogoWith + getUserMenuWidth);
 	
-	if (getMenuWith == 0) return false;
+	// if (getMenuWith == 0) return false;
 	
 	if (creticalPoint <= 50) {
 		$('.navbar-collapse')
