@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>API</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="assets/css/classic-light.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand navbar-brand-emphasized" href="">GetYourPanel</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="neworder.html">New order</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mass order <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="mass-simple.html">Simple form</a></li>
+                <li><a href="mass-regular.html">Regular form</a></li>
+                <li><a href="mass-extended.html">Extended form</a></li>
+              </ul>
+            </li>
+            <li><a href="services.html">Service list</a></li>
+            <li><a href="ordershistory.html">Orders history</a></li>
+            <li><a href="addfunds.html">Add funds</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li class="active"><a href="api.html">API</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tickets <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="newticket.html">New ticket</a></li>
+                <li><a href="mytickets.html">My tickets</a></li>
+              </ul>
+            </li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="balance"><a>$0.00</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon icon-user"></i> demo <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="center-big-content-block">
+            <h2 class="m-b-md">API 2.0</h2>
+            <table class="table table-api table-border-with-radius">
+              <tbody>
+                <tr>
+                  <td>HTTP Method</td>
+                  <td>POST</td>
+                </tr>
+                <tr>
+                  <td>API URL</td>
+                  <td>http://bulkandcheap.com/api/v2</td>
+                </tr>
+                <tr>
+                  <td>Response format</td>
+                  <td>JSON</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4 class="m-t-md m-b">Method <strong>services</strong></h4>
+            <table class="table table-api table-border-with-radius">
+              <thead>
+                <tr>
+                  <th>Parameters</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>key</td>
+                  <td>Your API key</td>
+                </tr>
+                <tr>
+                  <td>action</td>
+                  <td>Method name</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><strong>Example response</strong></p>
+<pre>
+[
+  {
+    "service":"1",
+    "name":"Followers",
+    "type":"Default"
+  },
+  {
+    "service":"2",
+    "name":"Likes",
+    "type":"Default"
+  },
+  {
+    "service":"3",
+    "name":"Custom Comments",
+    "type":"Custom Comments"
+  }
+]
+</pre>
+            <h4 class="m-t-md m-b">Method <strong>add</strong></h4>
+            <form class="form-inline m-b">
+              <div class="input-group ">
+              <!--     <label>Type&nbsp;</label> -->
+                  <div class="input-group-addon">Type&nbsp;</div>
+                  <select class="form-control custom-select">
+                    <option value="">Default</option>
+                    <option value="">Package</option>
+                    <option value="">SEO</option>
+                    <option value="">Custom Comments</option>
+                    <option value="">Mentions</option>
+                    <option value="">Mentions with Hashtags</option>
+                    <option value="">Mentions Custom List</option>
+                    <option value="">Mentions Hashtag</option>
+                    <option value="">Mentions User Followers</option>
+                    <option value="">Mentions Media Likers</option>
+                  </select>
+              </div>
+            </form>
+            <table class="table table-api table-border-with-radius">
+              <thead>
+                <tr>
+                  <th>Parameters</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>key</td>
+                  <td>Your API key</td>
+                </tr>
+                <tr>
+                  <td>action</td>
+                  <td>Method name</td>
+                </tr>
+                <tr>
+                  <td>service</td>
+                  <td>Service ID</td>
+                </tr>
+                <tr>
+                  <td>link</td>
+                  <td>Link to page</td>
+                </tr>
+                <tr>
+                  <td>quantity</td>
+                  <td>Needed quantity</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><strong>Example response</strong></p>
+<pre>
+{
+  "order":"23501"
+}
+</pre>
+            <h4 class="m-t-md m-b">Method <strong>status</strong></h4>
+            <table class="table table-api table-border-with-radius">
+              <thead>
+                <tr>
+                  <th>Parameters</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>key</td>
+                  <td>Your API key</td>
+                </tr>
+                <tr>
+                  <td>action</td>
+                  <td>Method name</td>
+                </tr>
+                <tr>
+                  <td>order</td>
+                  <td>Order ID</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><strong>Example response</strong></p>
+<pre>
+{
+  "charge":"0.27819",
+  "start_count":"3572",
+  "status":"Partial",
+  "remains":"157"
+}
+</pre>
+            <a href="/example.php.txt" class="btn btn-default m-t" target="_blank">Example of PHP code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

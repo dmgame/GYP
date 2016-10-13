@@ -2,7 +2,9 @@
 var getMenuWith = $('.navbar-collapse .navbar-nav').width();
 var getLogoWith = $('.navbar-brand').width();
 var getUserMenuWidth = $('.navbar-collapse .navbar-right').width();
-
+alert(getUserMenuWidth);
+alert(getLogoWith);
+alert(getMenuWith);
 $(window).on('load resize', function (){
 	var windowWith = $(window).width();
 
