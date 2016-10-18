@@ -1867,6 +1867,7 @@ a.badge:focus {
 .alert-success div{
   padding: 5px 12px;
   margin: 0 -12px;
+  word-break: break-all;
 }
 .alert-success div + div{
   border-top: 1px solid #d6e9c6;
